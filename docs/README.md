@@ -8,8 +8,13 @@ Our open-source CRM Super Deduper effort is on a mission to streamline the ident
 As of 2/5/2024, we have achieved a 98% recall of duplicates from 174,090 records (15,153,577,005 comparisons) in 11 minutes and 47 seconds. Another test with 75,232 records (2,829,889,296 comparisons) took just 2 minutes and 32 seconds. Deduplicating up to 100,000 records can now be done in less than 10 minutes. We're testing with Google Colab, so anyone can easily use this powerful tool with readily available resources to achieve similar results.
 
 ## Instructions
-The deduplication process is streamlined for simplicity and efficiency:
+The deduplication process can be achieved in a few easy steps:
 
+1. **Prepare Your Data**: Export address data from your CRM
+2. **Run the Deduper**: Configure and run the tool
+3. **Collect and Apply**: Download, review, and merge the matches.
+
+4. 
 * **Start Easily**: Open an example notebook in a secure, temporary Google Colab session.
 * **Load Your Data**: Import a CSV file of addresses exported from your CRM.
 * **Customize Configuration**: Tailor the settings to meet your specific requirements.
