@@ -14,6 +14,20 @@ The deduplication process can be achieved in a few easy steps:
 2. **Run the Deduper**: Configure and run the tool
 3. **Collect and Apply**: Download, review, and merge the matches.
 
+1. ctest
+2. test
+3. test
+
+## 1. Prepare Your Data
+
+Ensure your data is in a supported format (xls, xlsx, csv). This data should be exported from your CRM and include the columns you wish to search for duplicates.
+
+    ``` sql
+    SELECT customer_id, first_name, last_name, address, city, state -- essential
+         , total_amount, created_by, created_date  -- optional, but very helpful
+    FROM customer_table
+    ```
+
 4. 
 * **Start Easily**: Open an example notebook in a secure, temporary Google Colab session.
 * **Load Your Data**: Import a CSV file of addresses exported from your CRM.
@@ -31,13 +45,7 @@ https://colab.research.google.com/github/benevolent-machines/crm-deduper/blob/ma
 
 The `run` function is the core of our deduplication tool, designed to be both powerful and easy to use. Here's a step-by-step guide on how to use it:
 
-1. **Prepare Your Data**: Ensure your data is in a supported format (xls, xlsx, csv). This data should be exported from your CRM and include the columns you wish to search for duplicates.
-
-    ``` sql
-    SELECT customer_id, first_name, last_name, address, city, state -- essential
-         , total_amount, created_by, created_date  -- optional, but very helpful
-    FROM customer_table
-    ```
+1. **Prepare Your Data**: 
     
 2. Define Your Parameters: Customize the deduplication process by specifying the parameters based on your needs. Below are key parameters explained:
 
